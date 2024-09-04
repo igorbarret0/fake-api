@@ -24,6 +24,14 @@ public class ProductDTO {
     public ProductDTO() {
     }
 
+    public ProductDTO(String title, BigDecimal price, String category, String description, String image) {
+        this.title = title;
+        this.price = price;
+        this.category = category;
+        this.description = description;
+        this.image = image;
+    }
+
     public ProductDTO(Long id, String title, BigDecimal price, String category, String description, String image) {
         this.title = title;
         this.price = price;

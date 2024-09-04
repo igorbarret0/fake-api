@@ -63,7 +63,7 @@ public class ProductService {
         var productUpdated = ProductUtils.updateEntity(productEntity, request);
         productRepository.save(productUpdated);
 
-        return ProductUtils.entityToDto(productEntity);
+        return ProductUtils.entityToDto(productUpdated);
 
     }
 
